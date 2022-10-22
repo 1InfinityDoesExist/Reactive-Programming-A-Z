@@ -16,6 +16,7 @@ import com.rxjava.pro.repository.CharacterRepository;
 
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 import rx.Single;
 
 @Slf4j
