@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rxjava.pro.model.request.MarvelCharacterObject;
-import com.rxjava.pro.service.MarvelServiceImpl;
+import com.rxjava.pro.service.impl.MarvelServiceImpl;
 
 @RestController
 @RequestMapping("/marvel")
