@@ -5,9 +5,15 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import java.util.stream.IntStream;
 
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import reactor.core.publisher.DirectProcessor;
+import reactor.core.publisher.Flux;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -15,6 +21,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		// bannerCreator();
+
 	}
 
 	public static void bannerCreator() {
